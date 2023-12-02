@@ -1,0 +1,81 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 2,
+  "final_space": true,
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "session",
+          "style": "diamond",
+          "foreground": "p:white",
+          "background": "p:star_red",
+          "leading_diamond": "\ue0b6",
+          "template": "\uf427 {{ .UserName }} "
+        },
+        {
+          "type": "path",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "p:white",
+          "background": "p:star_orange",
+          "template": " {{ .Path }} ",
+          "properties": {
+            "style": "agnoster_short",
+            "max_depth": 5
+          }
+        },
+        {
+          "type": "git",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "p:white",
+          "background": "p:star_gold",
+          "template": " {{ .UpstreamIcon }}{{ .HEAD }} ",
+          "properties": {
+            "branch_icon": "",
+            "fetch_upstream_icon": true
+          }
+        },
+        {
+          "type": "node",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "p:white",
+          "background": "p:star_blue",
+          "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} "
+        },
+        {
+          "type": "unity",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "p:white",
+          "background": "p:star_blue",
+          "template": " \ue721 {{ .UnityVersion }} ",
+          "properties": {
+            "http_timeout": 2000
+          }
+        },
+        {
+          "type": "root",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#111111",
+          "background": "p:star_white",
+          "template": " \uf0e7 "
+        }
+      ]
+    }
+  ],
+  "palette": {
+    "white": "#FFFFFF",
+    "star_red": "#C82337",
+    "star_orange": "#E06236",
+    "star_gold": "#D7AB61",
+    "star_blue": "#2F4C79",
+    "star_white": "#F5F7F7"
+  }
+}
