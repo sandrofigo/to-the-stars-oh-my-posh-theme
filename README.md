@@ -1,2 +1,2 @@
-# to-the-stars-oh-my-posh-theme
+# to-the-stars
 A theme for oh-my-posh ✨
