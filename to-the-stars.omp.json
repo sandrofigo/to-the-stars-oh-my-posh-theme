@@ -24,7 +24,7 @@
           "background": "p:star_orange",
           "template": " {{ .Path }} ",
           "properties": {
-            "style": "agnoster_short",
+            "style": "folder",
             "max_depth": 5
           }
         },
