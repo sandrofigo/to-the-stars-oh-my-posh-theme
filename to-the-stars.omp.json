@@ -71,11 +71,11 @@
     }
   ],
   "palette": {
-    "white": "#FFFFFF",
-    "star_red": "#ba2536",
-    "star_orange": "#db6236",
-    "star_gold": "#dfae59",
-    "star_blue": "#2f4f80",
-    "star_white": "#F7F7F7"
+    "white": "#ffffff",
+    "star_red": "#c02739",
+    "star_orange": "#e26537",
+    "star_gold": "#e0ab4f",
+    "star_blue": "#315283",
+    "star_white": "#f7f7f7"
   }
 }
