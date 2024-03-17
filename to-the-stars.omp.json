@@ -34,7 +34,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:white",
           "background": "p:star_gold",
-          "template": " {{ .UpstreamIcon }}  {{ .HEAD }} ",
+          "template": " {{ .UpstreamIcon }} {{ .HEAD }} ",
           "properties": {
             "branch_icon": "",
             "fetch_upstream_icon": true
