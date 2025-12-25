@@ -1,7 +1,13 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-  "version": 2,
-  "final_space": true,
+  "palette": {
+    "white": "#ffffff",
+    "star_red": "#c02739",
+    "star_orange": "#e26537",
+    "star_gold": "#e0ab4f",
+    "star_blue": "#315283",
+    "star_white": "#f7f7f7"
+  },
   "blocks": [
     {
       "type": "prompt",
@@ -23,9 +29,10 @@
           "foreground": "p:white",
           "background": "p:star_orange",
           "template": " {{ .Path }} ",
-          "properties": {
+          "options": {
             "style": "folder",
-            "max_depth": 5
+            "max_depth": 2,
+            "hide_root_location": true
           }
         },
         {
@@ -34,8 +41,8 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:white",
           "background": "p:star_gold",
-          "template": " {{ .UpstreamIcon }}{{ .HEAD }} ",
-          "properties": {
+          "template": " {{ .UpstreamIcon }} {{ .HEAD }} ",
+          "options": {
             "branch_icon": "",
             "fetch_upstream_icon": true
           }
@@ -55,7 +62,7 @@
           "foreground": "p:white",
           "background": "p:star_blue",
           "template": " \ue721 {{ .UnityVersion }} ",
-          "properties": {
+          "options": {
             "http_timeout": 2000
           }
         },
@@ -70,12 +77,6 @@
       ]
     }
   ],
-  "palette": {
-    "white": "#ffffff",
-    "star_red": "#c02739",
-    "star_orange": "#e26537",
-    "star_gold": "#e0ab4f",
-    "star_blue": "#315283",
-    "star_white": "#f7f7f7"
-  }
+  "final_space": true,
+  "version": 4
 }
